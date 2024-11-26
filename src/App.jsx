@@ -10,7 +10,7 @@ import Project from "./components/Project"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ChessClubImage from "../src/assets/image3.png"
-import FlashcardImage from "../src/assets/Flashcard-project-image.png"
+import FlashcardImage from "../src/assets/Flashcard-Project-image.png"
 import ChessTournamentImage from "../src/assets/Chess-Tournament-Program-image.jpg"
 import PokemonAppImage from "../src/assets/Pokemon-App-Image.png"
 
