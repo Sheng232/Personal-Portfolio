@@ -65,7 +65,7 @@ function App() {
       <h1 className="flex-center projects-title" id="projects">My Selected Projects</h1>
       {displayProjects}
       <section className="flex-center relative" >
-                <div className="flex-evenly">
+                <div className="flex-evenly2">
                     <div className="project-info">
                         <h2 className="project-title">Pokemon Search App</h2>
                         <p className="project-description">An app built with JavaScript that fetch data through the pokemon Api</p>

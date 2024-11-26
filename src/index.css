@@ -420,6 +420,15 @@ footer{
   .skills{
     width: 100vw;
   }
+  .skill{
+    width: 50px;
+  }
+  .skill > svg{
+    width: 30px;
+  }
+  .skill > figcaption{
+    font-size: 0.7rem;
+  }
   section{
     height: auto;
   }
@@ -427,7 +436,6 @@ footer{
     margin-top: 50px;
     margin-bottom: 50px;
   }
-
   .flex-evenly{
     flex-direction: column-reverse;
   }
