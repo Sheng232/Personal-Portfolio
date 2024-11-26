@@ -9,13 +9,16 @@ import About from "./components/About"
 import Project from "./components/Project"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import ChessClubImage from "../src/assets/image3.png"
+import "../src/assets"
+
 function App() {
   const projects = [
     {
       title: "Chess Club Website",
       description: "A informative website for my school club",
       tech: ["HTML", "CSS", "JavaScript"],
-      demoUrl: "../assets/image3.png",
+      demoUrl: ChessClubImage,
       github: "https://github.com/Sheng232/Chess-Club-Website",
       id: 1,
     },
