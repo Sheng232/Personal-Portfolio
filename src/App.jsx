@@ -18,7 +18,7 @@ function App() {
   const projects = [
     {
       title: "Chess Club Website",
-      description: "A informative website for my school club",
+      description: "An informative website for my school club",
       tech: ["HTML", "CSS", "JavaScript"],
       demoUrl: ChessClubImage,
       github: "https://github.com/Sheng232/Chess-Club-Website",
@@ -72,10 +72,10 @@ function App() {
                         <div className="technology-used"><div><FontAwesomeIcon icon={faHtml5} /> HTML</div> <div><FontAwesomeIcon icon={faCss} /> CSS</div> <div><FontAwesomeIcon icon={faJs} /> JavaScript</div></div>
                         <a target="_blank" className="github-button flex-center" href="https://github.com/Sheng232/Pokemon-Search-App"><FontAwesomeIcon icon={faGithub} />Github Repo</a>
                     </div>
-                        <div className="phone-case flex-center">
+                        <div className="phone-case relative flex-center">
                           <img className="project-image2" src={PokemonAppImage} />
+                          <div className="home-button"></div>
                         </div>
-                        <div className="home-button"></div>
                 </div>
 
             </section>

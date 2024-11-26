@@ -30,7 +30,7 @@ export default function Hero(){
                 </figure>
             </div>
             <div className="hero-button flex-center">
-                <a className="work-button flex-center">My work</a>
+                <a className="work-button flex-center" href="#projects">My work</a>
                 <FontAwesomeIcon icon={faDownLong} beat className="down-arrow"/>
             </div>
         </div>

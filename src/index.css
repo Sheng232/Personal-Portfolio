@@ -26,7 +26,7 @@ article{
 }
 section{
   margin: 0 auto;
-  width: 800px;
+  width: auto;
   padding: 1rem;
   height: 300px;
   margin-top: 100px;
@@ -51,7 +51,7 @@ section > div{
   align-items: center;
   justify-content: space-between;
 }
-.flex-evenly{
+.flex-evenly, .flex-evenly2{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -144,6 +144,9 @@ figure{
   border: none;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+.github-button > svg{
+  margin-right: 3px;
 }
 
 .github-button:hover{
@@ -260,8 +263,8 @@ figure{
   border: 6px solid var(--primary-color);
   border-radius: 100%;
   position: absolute;
-  right: 20.5%;
-  bottom: -23%;
+  right: 44%;
+  bottom: 1.5%;
 }
 .project-info{
   width: 400px;
@@ -306,23 +309,30 @@ figure{
 }
 .triangle{
   position: absolute;
-  border-top: 20px solid transparent;
+  /* border-top: 20px solid transparent;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
   border-bottom: 50px solid var(--primary-color);
-  right: 18%;
-  bottom: 3%;
-  z-index: 1;
+  */
+  background-color: var(--primary-color);
+  right: 35%;
+  bottom: -5%; 
+  width: 100px;
+  height: 10px;
+  z-index: 0;
 }
 .triangle2{
   position: absolute;
-  border-top: 20px solid transparent;
+  /* border-top: 20px solid transparent;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
-  border-bottom: 50px solid var(--primary-color);
-  left: 18%;
-  bottom: 3%;
-  z-index: 1;
+  border-bottom: 50px solid var(--primary-color); */
+  background: var(--primary-color);
+  width: 100px;
+  height: 10px;
+  left: 34%;
+  bottom: -5%;
+  z-index: 50;
 }
 .technology-used{
   width: auto;
@@ -379,16 +389,46 @@ footer{
   .hero{
     flex-direction: column;
   }
+  .hero-description{
+    margin-bottom: 30px;
+  }
   
 }
 @media (max-width: 850px){
+  .hero-description{
+    padding: 2rem;
+  }
+  .hero-image, .hero-image-back{
+    width: 350px;
+    height: 420px;
+  }
+  #about{
+    padding: 1rem;
+  }
   .logo{
     display: none;
   }
   nav > div{
     width: 100%;
   }
+  section{
+    margin-top: 10px;
+  }
   section > div{
     flex-direction: column;
+  }
+  .skills{
+    width: 100vw;
+  }
+  section{
+    height: auto;
+  }
+  .project-info, .project-info2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .flex-evenly{
+    flex-direction: column-reverse;
   }
 }

@@ -26,7 +26,7 @@ export default function Project(props){
         id%2 === 0 ?
         <div>
             <section className="flex-center relative" >
-                <div className="flex-evenly">
+                <div className="flex-evenly2">
                     <div className="project-info">
                         <h2 className="project-title">{title}</h2>
                         <p className="project-description">{description}</p>
@@ -36,8 +36,9 @@ export default function Project(props){
                     <div className="project-demo flex-center">
                         <img className="project-image" src={demoUrl} />
                         <div className="dot"></div>
+                        <div className="triangle"></div>
                     </div>
-                    <div className="triangle"></div>
+                    
                 </div>
 
             </section>
@@ -48,8 +49,8 @@ export default function Project(props){
                 <div className="project-demo flex-center">
                         <img className="project-image" src={demoUrl} />
                         <div className="dot"></div>
+                        <div className="triangle2"></div>
                     </div>
-                    <div className="triangle2"></div>
                     <div className="project-info2">
                         <h2 className="project-title">{title}</h2>
                         <p className="project-description">{description}</p>
