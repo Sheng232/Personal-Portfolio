@@ -23,7 +23,7 @@ export default function Hero(){
                     </p>
                 </div>
                 <figure>
-                    <img className="flex-center hero-image" src="./src/assets/Hero-image.png"/>
+                    <img className="flex-center hero-image" src="src/assets/Hero-image.png"/>
                     <div className="hero-image-back"></div>
                 </figure>
             </div>
