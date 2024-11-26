@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownLong } from "@fortawesome/free-solid-svg-icons"
+import HeroImage from "../assets/Hero-image.png";
+
 export default function Hero(){
     return(
         <div className="hero-container">
@@ -23,7 +25,7 @@ export default function Hero(){
                     </p>
                 </div>
                 <figure>
-                    <img className="flex-center hero-image" src="src/assets/Hero-image.png"/>
+                    <img className="flex-center hero-image" src={HeroImage}/>
                     <div className="hero-image-back"></div>
                 </figure>
             </div>
