@@ -10,7 +10,9 @@ import Project from "./components/Project"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ChessClubImage from "../src/assets/image3.png"
-import "../src/assets"
+import FlashcardImage from "../src/assets/Flashcard-project-image.png"
+import ChessTournamentImage from "../src/assets/Chess-Tournament-Program-image.jpg"
+import PokemonAppImage from "../src/assets/Pokemon-App-Image.png"
 
 function App() {
   const projects = [
@@ -26,7 +28,7 @@ function App() {
       title: "Flashcard App",
       description: "A quizlet-like application to study for your next exam :)",
       tech: ["React", "Vite", "CSS", "JavaScript", "HTML"],
-      demoUrl: "../assets/Flashcard-Project-image.PNG",
+      demoUrl: FlashcardImage,
       github: "https://github.com/Sheng232/Flashcard-project",
       id: 2,
     },
@@ -34,7 +36,7 @@ function App() {
       title: "Chess Tournament App",
       description: "An automated program built with Processing to run chess tournament",
       tech: ["Java"],
-      demoUrl: "../assets/Chess-Tournament-Program-image.JPG",
+      demoUrl: ChessTournamentImage,
       github: "https://github.com/Sheng232/Chess-Tournament-Program",
       id: 3,
     }
@@ -71,7 +73,7 @@ function App() {
                         <a target="_blank" className="github-button flex-center" href="https://github.com/Sheng232/Pokemon-Search-App"><FontAwesomeIcon icon={faGithub} />Github Repo</a>
                     </div>
                         <div className="phone-case flex-center">
-                          <img className="project-image2" src="src/assets/Pokemon-App-Image.png" />
+                          <img className="project-image2" src={PokemonAppImage} />
                         </div>
                         <div className="home-button"></div>
                 </div>
