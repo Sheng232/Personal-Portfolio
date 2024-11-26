@@ -15,7 +15,7 @@ function App() {
       title: "Chess Club Website",
       description: "A informative website for my school club",
       tech: ["HTML", "CSS", "JavaScript"],
-      demoUrl: "src/assets/image3.png",
+      demoUrl: "../assets/image3.png",
       github: "https://github.com/Sheng232/Chess-Club-Website",
       id: 1,
     },
@@ -23,7 +23,7 @@ function App() {
       title: "Flashcard App",
       description: "A quizlet-like application to study for your next exam :)",
       tech: ["React", "Vite", "CSS", "JavaScript", "HTML"],
-      demoUrl: "src/assets/Flashcard-Project-image.PNG",
+      demoUrl: "../assets/Flashcard-Project-image.PNG",
       github: "https://github.com/Sheng232/Flashcard-project",
       id: 2,
     },
@@ -31,7 +31,7 @@ function App() {
       title: "Chess Tournament App",
       description: "An automated program built with Processing to run chess tournament",
       tech: ["Java"],
-      demoUrl: "src/assets/Chess-Tournament-Program-image.JPG",
+      demoUrl: "../assets/Chess-Tournament-Program-image.JPG",
       github: "https://github.com/Sheng232/Chess-Tournament-Program",
       id: 3,
     }
@@ -46,6 +46,7 @@ function App() {
         demoUrl = {demoUrl}
         github = {github}
         id = {id}
+        key = {id}
       />
     )
   })
