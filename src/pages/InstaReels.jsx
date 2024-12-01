@@ -5,7 +5,7 @@ import Message from "../assets/Messages.png"
 export default function InstaReels(){
 
     return(
-        <div>
+        <div className="reels">
             <video  autoPlay loop src={webDevVideo} muted className="video" />
             <div className="video-heart">
                 <FontAwesomeIcon icon = {faHeart} className="heart"/>
