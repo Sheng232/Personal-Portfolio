@@ -102,6 +102,7 @@
     margin: 1rem;
 }
 .profile-stats{
+    flex-direction: row;
     padding: 10px 0 10px 0;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
