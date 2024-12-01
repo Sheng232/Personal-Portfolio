@@ -35,6 +35,7 @@ export default function Navbar(){
                     <FontAwesomeIcon icon = {isDark ? faMoon : faSun} 
                         className="darkmode-button" 
                         onClick = {changeMode}
+                        color = {isDark ? "gray" : "#8B8000"}
                         />
                 </div>
                 

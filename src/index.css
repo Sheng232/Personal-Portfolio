@@ -18,6 +18,9 @@
   /* color: var(--primary-color); */
   /* overflow-x: hidden; */
 }
+.center{
+  text-align: center;
+}
 div{
   color: var(--primary-color)
 }
@@ -243,6 +246,10 @@ figure{
   font-size: 2.5rem;
   color: var(--secondary-color);
 }
+.contact-title{
+  margin-top: 100px;
+  text-align: center;
+}
 
 .project-image{
   width: 300px;
@@ -356,7 +363,7 @@ footer{
 }
 .instagram-phone-case{
   position: relative;
-  margin: 100px auto;
+  margin: 30px auto;
   width: 400px;
   height: 800px;
   border-radius: 3rem;

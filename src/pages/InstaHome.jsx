@@ -48,15 +48,15 @@ export default function InstaHome (){
             <div className="insta-home-stories">
                 <figure>
                     <img src={HeroImg} alt="profile-pic" className="insta-profile-pic"/>
-                    <figcaption>Your story</figcaption>
+                    <figcaption className="small-font">Your story</figcaption>
                 </figure>
                 <figure>
                     <img src={ChessClubLogo} alt="chess Club logo" className="insta-profile-pic" />
-                    <figcaption>lowellhsches...</figcaption>
+                    <figcaption className="small-font">lowellhsches...</figcaption>
                 </figure>
                 <figure>
                     <img src={LFRLogo} alt="LFR-logo" className="insta-profile-pic" />
-                    <figcaption>lowellfoodre...</figcaption>
+                    <figcaption className="small-font">lowellfoodre...</figcaption>
                 </figure>
 
             </div>
