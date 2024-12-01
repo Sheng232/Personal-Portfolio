@@ -6,6 +6,7 @@
   --image-height: 470px;
   --background-color: #2e2e2e;
   --nav-height: 100px;
+  --glow-color: #307534f2;
 }
 
 *{
@@ -145,6 +146,9 @@ figure{
   color: var(--secondary-color);
   font-size: 2.5rem;
 }
+.hero-description > div{
+  font-size: 1.2rem;
+}
 .github-button{
   width: 200px;
   height: 50px;
@@ -224,6 +228,10 @@ figure{
   justify-content: space-evenly;
   flex-direction: column;
   background: var(--tertiary-color);
+}
+.skill:hover{
+  color: var(--secondary-color);
+  
 }
 .skill > figcaption{
   background-color: var(--tertiary-color);
@@ -398,6 +406,14 @@ footer{
 .link{
   background: white;
   border: none;
+}
+
+.glowable-text {
+  color: var(--primary-color);
+}
+
+[glow] .glowable-text {
+  color: var(--glow-color);
 }
 
 @keyframes slide{

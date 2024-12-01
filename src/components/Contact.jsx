@@ -1,6 +1,6 @@
 import InstaNav from "../components/InstaNav"
 import { Outlet } from "react-router-dom"
-import Time from "./time"
+import Time from "../components/Time"
 export default function Contact(){
     return(
         <>

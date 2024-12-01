@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faReact, faGit, faGithub, faFigma} from '@fortawesome/free-brands-svg-icons'
 import { faJs, faHtml5, faCss, faJava } from "@fortawesome/free-brands-svg-icons"
-
+import { GlowCapture , Glow} from "@codaworks/react-glow";
 
 export default function Project(props){
     const {title, description, tech, demoUrl, github, id} = props
@@ -24,10 +24,12 @@ export default function Project(props){
 
     return(
         id%2 === 0 ?
-        <div>
+        <GlowCapture>
+            <Glow color='#227fd6'>
+                <div>
             <section className="flex-center relative" >
                 <div className="flex-evenly2">
-                    <div className="project-info">
+                    <div className="project-info glowable-text">
                         <h2 className="project-title">{title}</h2>
                         <p className="project-description">{description}</p>
                         <div className="technology-used">{displayTechnology}</div>
@@ -42,7 +44,13 @@ export default function Project(props){
                 </div>
 
             </section>
-        </div> : 
+        </div>
+        </Glow>
+        </GlowCapture>
+         : 
+            
+         <GlowCapture>
+            <Glow color='purple'>
             <div>
             <section className="flex-center relative" >
                 <div className="flex-evenly">
@@ -51,17 +59,17 @@ export default function Project(props){
                         <div className="dot"></div>
                         <div className="triangle2"></div>
                     </div>
-                    <div className="project-info2">
+                    <div className="project-info2 glowable-text">
                         <h2 className="project-title">{title}</h2>
                         <p className="project-description">{description}</p>
                         <div className="technology-used">{displayTechnology}</div>
                         <a target="_blank" className="github-button flex-center" href={github}><FontAwesomeIcon icon={faGithub} />Github Repo</a>
                     </div>
                 </div>
-
             </section>
         </div>
-
+        </Glow>
+    </GlowCapture>
     )
 
 }

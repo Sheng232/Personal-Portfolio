@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faReact, faGit, faGithub, faFigma} from '@fortawesome/free-brands-svg-icons'
 import { faJs, faHtml5, faCss, faJava } from "@fortawesome/free-brands-svg-icons"
-
+import { GlowCapture, Glow } from "@codaworks/react-glow"
 
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
@@ -67,8 +67,10 @@ export default function Home(){
           <h1 className="flex-center projects-title" id="projects">My Selected Projects</h1>
           {displayProjects}
           <section className="flex-center relative" >
+          <GlowCapture>
+            <Glow color='purple'>
                     <div className="flex-evenly2">
-                        <div className="project-info">
+                        <div className="project-info glowable-text">
                             <h2 className="project-title">Pokemon Search App</h2>
                             <p className="project-description">An app built with JavaScript that fetch data through the pokemon Api</p>
                             <div className="technology-used"><div><FontAwesomeIcon icon={faHtml5} /> HTML</div> <div><FontAwesomeIcon icon={faCss} /> CSS</div> <div><FontAwesomeIcon icon={faJs} /> JavaScript</div></div>
@@ -78,8 +80,9 @@ export default function Home(){
                               <img className="project-image2" src={PokemonAppImage} />
                               <div className="home-button"></div>
                             </div>
-                    </div>
-    
+                      </div>
+                    </Glow>
+                  </GlowCapture>
                 </section>
           <Contact />
           <Footer />
