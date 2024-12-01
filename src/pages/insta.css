@@ -1,0 +1,83 @@
+.insta-home-stories{
+    display: flex;
+    padding-left: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+.phone-info{
+    padding: 1rem;
+    border-top-right-radius: 44px;
+    border-top-left-radius: 44px;
+}
+.flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+.insta-profile-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid lightgreen;
+    object-fit: cover;
+    margin-right: 10px;
+}
+figcaption{
+    font-size: 10px;
+    text-align: center;
+    padding-right: 10px;
+}
+.posts{
+    overflow-y: scroll;
+    max-height: 800px;
+    height: 570px;
+}
+.post-img{
+    width: 100%;
+}
+.post-name{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.post-logo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.post-description{
+    padding: 10px;
+}
+.heart{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    width: 30px;
+    height: 30px;
+    color: red;
+    cursor: pointer;
+}
+.fake-searchbar-container{
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+}
+.fake-searchbar{
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+}
+.grid{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    overflow-y: auto;
+}
+.col-1, .col-2, .col-3{
+    display: grid;
+    gap: 3px;
+}

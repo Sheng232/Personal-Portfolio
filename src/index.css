@@ -13,10 +13,13 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #2e2e2e;
+  background-color: var(--background-color);
   font-family: Montserrat, sans-serif;
-  color: #c0c1d4;
+  /* color: var(--primary-color); */
   /* overflow-x: hidden; */
+}
+div{
+  color: var(--primary-color)
 }
 a{
   text-decoration: none;
@@ -64,6 +67,9 @@ nav{
   height: var(--nav-height);
   align-items: center;
   z-index: 20;
+}
+a{
+  color: var(--primary-color)
 }
 nav > div{
   position: absolute;
@@ -194,7 +200,7 @@ figure{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #2e2e2e;
+  background-color: var(--background-color);
   border-left: 2px solid var(--secondary-color);
   animation: typing 3s steps(18) infinite alternate;
 }
@@ -344,6 +350,49 @@ footer{
   height: 100px;
   background: var(--tertiary-color);
 }
+.darkmode-button{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.instagram-phone-case{
+  position: relative;
+  margin: 100px auto;
+  width: 400px;
+  height: 800px;
+  border-radius: 3rem;
+  border: 4px solid var(--primary-color);
+
+  margin-bottom: 1rem;
+}
+.insta-nav{
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  justify-content: space-evenly;
+  background: white;
+  border-bottom-left-radius: 44px;
+  border-bottom-right-radius: 44px;
+  border-top: 3px solid var(--primary-color)
+}
+.profile-pic{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  object-fit: cover;
+  border: 1px solid var(--primary-color)
+}
+.insta-buttons{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+}
+.link{
+  background: white;
+  border: none;
+}
+
 @keyframes slide{
   0%{
     top: 0;
