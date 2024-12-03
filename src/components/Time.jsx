@@ -9,9 +9,22 @@ export default function Time(){
     const currentTime = `${hour > 12 ? hour - 12 : hour} : ${minutes < 10 ? '0'+ minutes : minutes}`
     const [time, setTime] = useState(currentTime);
 
-    useEffect(()=>{
-        setTime(currentTime);
-    },[date]);
+    function getCurrentTime() {
+        const date = new Date();
+        const hour = date.getHours();
+        const minutes = date.getMinutes();
+        return `${hour > 12 ? hour - 12 : hour} : ${minutes < 10 ? '0' + minutes : minutes}`;
+      }
+      
+      useEffect(() => {
+        // Update the time every minute (60000ms)
+        const intervalId = setInterval(() => {
+          setTime(getCurrentTime());
+        }, 60000); // Update every 60 seconds
+    
+        // Clean up the interval on component unmount
+        return () => clearInterval(intervalId);
+      }, []); // Empty array means this runs once when the component mounts
 
     return(
         <>

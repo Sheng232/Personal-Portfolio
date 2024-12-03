@@ -404,8 +404,17 @@ footer{
   cursor: pointer;
 }
 .link{
-  background: white;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: none;
+  width: 26px;
+  height: 26px;
+}
+.pfp{
+  background-color: var(--background-color);
+  border-radius: 50px;
 }
 
 .glowable-text {
