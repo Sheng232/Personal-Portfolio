@@ -24,7 +24,7 @@ export default function InstaMessages(){
                 <img src={LuisImg} alt="" className="luis-profile"/>
                 <div>
                     <h5>Luis Palcios</h5>
-                    <p>You: ❤️😘 ⋅ 4w</p>
+                    <p>You: On Skibidi ⋅ 4w</p>
                 </div>
             </div>
 
