@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import  Home from "./pages/Home"
 import  Layout  from "./pages/Layout"
 import InstaHome from "./pages/InstaHome"
@@ -9,17 +9,17 @@ import InstaProfile from "./pages/InstaProfile"
 
 function App() {
   return(
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="Personal-Portfolio/" element={<InstaHome />}/>
-          <Route path="Personal-Portfolio/Search" element={<InstaSearch />} />
-          <Route path="Personal-Portfolio/Reels" element={<InstaReels />} />
-          <Route path="Personal-Portfolio/Messages" element={<InstaMessages />} />
-          <Route path="Personal-Portfolio/Profile" element={<InstaProfile />} />
+          <Route path="/" element={<InstaHome />}/>
+          <Route path="/Search" element={<InstaSearch />} />
+          <Route path="/Reels" element={<InstaReels />} />
+          <Route path="/Messages" element={<InstaMessages />} />
+          <Route path="/Profile" element={<InstaProfile />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

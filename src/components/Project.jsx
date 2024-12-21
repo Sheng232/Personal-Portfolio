@@ -6,10 +6,9 @@ import { GlowCapture , Glow} from "@codaworks/react-glow";
 export default function Project(props){
     const {title, description, tech, demoUrl, github, id} = props
 
-    const displayTechnology = tech.map(element=>{
+    const displayTechnology = tech.map((element, index)=>{
         return(
-            <>
-                <div>
+                <div key={index}>
                     {element === "HTML" ? <FontAwesomeIcon icon={faHtml5} /> :
                     element === "CSS" ? <FontAwesomeIcon icon={faCss} /> :
                     element === "JavaScript" ? <FontAwesomeIcon icon={faJs} /> :
@@ -18,7 +17,6 @@ export default function Project(props){
                     :""
                     } {element}
                 </div>
-            </>
         )
     })
 
