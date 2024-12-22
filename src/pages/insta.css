@@ -2,6 +2,8 @@
     display: flex;
     padding-left: 10px;
     border-bottom: 2px solid var(--primary-color);
+    width: 392px;
+    overflow-y: auto;
 }
 .phone-info{
     padding: 1rem;
@@ -196,4 +198,84 @@
 }
 .reels > *{
     color: white;
+}
+
+.new-story-button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    margin-right: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.plus-icon{
+    font-size: 1.8rem;
+    width: 70px;
+    background: transparent;
+    cursor: pointer;
+}
+.popover{
+    display: none;
+    position: absolute;
+    width: 348px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    top: 20%;
+    right: 26px;
+}
+.popover *{
+    background: transparent;
+    color: black;
+}
+.popover h4{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1.5px solid var(--primary-color);
+    position: relative;
+}
+.minus-icon{
+    position: absolute;
+    right: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.popover h3, .popover input{
+    text-align: center;
+}
+.file-input-container {
+    display: block;
+    margin: 0 auto;
+}
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.upload-container{
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+.popover img{
+    display: block;
+    margin: 0 auto;
+}
+.post-image{
+    background: transparent;
 }
