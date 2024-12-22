@@ -12,12 +12,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="Personal-Portfolio/" element={<InstaHome />}/>
-          <Route path="Personal-Portfolio/Search" element={<InstaSearch />} />
-          <Route path="Personal-Portfolio/Reels" element={<InstaReels />} />
-          <Route path="Personal-Portfolio/Messages" element={<InstaMessages />} />
-          <Route path="Personal-Portfolio/Profile" element={<InstaProfile />} />
-          <Route path="Personal-Portfolio/Stories" element={<Outlet />}>
+          <Route path="/" element={<InstaHome />}/>
+          <Route path="/Search" element={<InstaSearch />} />
+          <Route path="/Reels" element={<InstaReels />} />
+          <Route path="/Messages" element={<InstaMessages />} />
+          <Route path="/Profile" element={<InstaProfile />} />
+          <Route path="/Stories" element={<Outlet />}>
             <Route path=":UserName" element={<Stories />}/>
           </Route>
         </Route>

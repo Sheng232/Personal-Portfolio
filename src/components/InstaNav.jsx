@@ -16,7 +16,7 @@ export default function InstaNav(){
         <nav className="insta-nav">
         <NavLink
         className="link"
-        to="Personal-Portfolio/"
+        to="/"
         // Use isActive function to determine if the link is active
         style={({ isActive }) => ({
           backgroundImage: isActive ? `url(${HomeClick})` : `url(${Home})`,
@@ -25,28 +25,28 @@ export default function InstaNav(){
         />
         <NavLink
         className="link"
-        to="Personal-Portfolio/Search"
+        to="/Search"
         style={({ isActive }) => ({
           backgroundImage: isActive ? `url(${SearchClick})` : `url(${Search})`,
         })}
         />
         <NavLink
         className="link"
-        to="Personal-Portfolio/Reels"
+        to="/Reels"
         style={({ isActive }) => ({
           backgroundImage: isActive ? `url(${ReelsClick})` : `url(${Reels})`,
         })}
         />
         <NavLink
         className="link"
-        to="Personal-Portfolio/Messages"
+        to="/Messages"
         style={({ isActive }) => ({
           backgroundImage: isActive ? `url(${MessagesClick})` : `url(${Messages})`,
         })}
         />
         <NavLink
         className="link pfp"
-        to="Personal-Portfolio/Profile"
+        to="/Profile"
         style={{
           backgroundImage: `url(${HeroImg})`
         }}
