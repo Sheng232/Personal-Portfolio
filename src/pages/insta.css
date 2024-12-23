@@ -235,6 +235,42 @@
     border-bottom: 1.5px solid var(--primary-color);
     position: relative;
 }
+.story-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+}
+.story-user{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0 !important;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+.story-description{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    height: 100px;
+}
+.description-length{
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+.story-description:focus{
+    outline: none;
+}
 .minus-icon{
     position: absolute;
     right: 10px;
@@ -260,7 +296,7 @@ input[type="file"] {
     justify-content: center;
     gap: 10px;
 }
-.custom-file-upload {
+.custom-file-upload, .post-story-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -269,8 +305,13 @@ input[type="file"] {
     cursor: pointer;
     text-align: center;
   }
-.custom-file-upload:hover {
+.custom-file-upload:hover, .post-story-button:hover {
     background-color: #0056b3;
+}
+.post-story-button{
+    display: block;
+    margin: 0 auto;
+    border: none;
 }
 .popover img{
     display: block;

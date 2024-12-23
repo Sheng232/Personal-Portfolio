@@ -11,30 +11,58 @@ import PostImage from "../assets/PostImage.png"
 export default function InstaHome (){
     const stories = [
         {
-            src: HeroImg,
-            user: 'Your story',
-            story: "https://picsum.photos/200/300",
-        },
-        {
             src: ChessClubLogo,
             user: 'lowellhschessclub',
             story: "https://picsum.photos/200/300",
+            description: "",
         },
         {
             src: ChessClubImg,
             user: 'lowellfoodrescue',
             story: "https://picsum.photos/200/300",
+            description: "",
         },
     ];
 
-    const [storiesState, setStoriesState] = useState(JSON.parse(localStorage.getItem("stories")));
+    const [storiesState, setStoriesState] = useState(JSON.parse(localStorage.getItem("stories")) || stories);
     const [isLiked, setIsLiked] = useState(true);
-    const [popup, setPopup] = useState(false);
+    const [popup, setPopup] = useState(0);
+    const [imageFile, setImageFile] = useState(null);
+    const [description, setDescription] = useState("");
 
+    function uploadFile(event){
+        const newFile = event.target.files[0];
+        if(newFile){
+            const reader = new FileReader();
+            reader.onload = (e) =>{
+                setImageFile(e.target.result);
+                setPopup(2);
+            }
+            reader.readAsDataURL(newFile);
+        }
+
+    }
+    function shareStory(){
+        setStoriesState(prevState =>
+                    [
+                        {
+                            src: HeroImg,
+                            user: 'Your story',
+                            story: imageFile,
+                            description: description,
+                        },
+                        ...prevState,
+                    ]
+                )
+        setPopup(0);
+
+    }
     useEffect(()=>{
-        localStorage.setItem("stories", JSON.stringify(stories));
-    }, [stories])
+        localStorage.setItem("stories", JSON.stringify(storiesState));
+    }, [stories, storiesState])
 
+
+    
     const displayStories = storiesState.map((story, index)=>{
         return(
             <figure key={index}>
@@ -46,10 +74,10 @@ export default function InstaHome (){
         )
     })
     function showPopover(){
-        setPopup(true);
+        setPopup(1);
     }
     function hidePopover(){
-        setPopup(false);
+        setPopup(0);
     }
     const posts = [
         {
@@ -79,8 +107,6 @@ export default function InstaHome (){
     }
 
     )
-
-
     function toggleLike(){
         setIsLiked(prevState=>!prevState);
     }
@@ -91,10 +117,11 @@ export default function InstaHome (){
                 <button
                     className="new-story-button flex-center" onClick={showPopover}>
                     <FontAwesomeIcon icon={faPlus} className="plus-icon" />
-                    
                 </button>
+
+
                 <div className="popover" 
-                    style={{display: popup ? "block" : "none"}}
+                    style={{display: popup === 1 ? "block" : "none"}}
                 >
                     <h4>
                         Create new post
@@ -109,10 +136,43 @@ export default function InstaHome (){
                             <label htmlFor="file-upload" className="custom-file-upload">
                                 Select from computer
                             </label>
-                            <input type="file" id="file-upload" name="input-story" />
+                            <input type="file" id="file-upload" name="input-story" 
+                                onChange={uploadFile}
+                            />
                         </div>
                     </div>
                 </div>
+                <div className="popover" 
+                    style={{display: popup === 2 ? "block" : "none"}}
+                >
+                    <h4>
+                        Create new post
+                        <FontAwesomeIcon icon={faMinus} className="minus-icon" 
+                            onClick = {hidePopover}
+                        />
+                    </h4>
+                    <img src={imageFile} alt="" className="story-image" />
+                    <figure className="user">
+                        <img src={HeroImg} alt="" className="story-user" />
+                        <figcaption>
+                            <strong>sheng45334</strong>
+                        </figcaption>
+                    </figure>
+                    <textarea className="story-description" maxLength="200"
+                        onChange={(event)=>{
+                            setDescription(event.target.value)
+                        }}
+                    >
+                    </textarea>
+                    <p className="description-length">{description.length}/200</p>
+                    <button className="post-story-button"
+                        onClick={shareStory}
+                    >
+                        Share
+                    </button>
+                </div>
+                        
+
                 {displayStories}
             </div>
             <div className="posts">
