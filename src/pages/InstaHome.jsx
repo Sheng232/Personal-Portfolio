@@ -11,15 +11,16 @@ import PostImage from "../assets/PostImage.png"
 export default function InstaHome (){
     const stories = [
         {
+
             src: ChessClubLogo,
             user: 'lowellhschessclub',
-            story: "https://picsum.photos/200/300",
+            story: "https://picsum.photos/500/800",
             description: "",
         },
         {
             src: ChessClubImg,
             user: 'lowellfoodrescue',
-            story: "https://picsum.photos/200/300",
+            story: "https://picsum.photos/500/800",
             description: "",
         },
     ];
