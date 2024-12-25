@@ -22,8 +22,6 @@ export default function Project(props){
 
     return(
         id%2 === 0 ?
-        <GlowCapture>
-            <Glow color='#227fd6'>
                 <div>
             <section className="flex-center relative" >
                 <div className="flex-evenly2">
@@ -43,12 +41,7 @@ export default function Project(props){
 
             </section>
         </div>
-        </Glow>
-        </GlowCapture>
          : 
-            
-         <GlowCapture>
-            <Glow color='purple'>
             <div>
             <section className="flex-center relative" >
                 <div className="flex-evenly">
@@ -66,8 +59,6 @@ export default function Project(props){
                 </div>
             </section>
         </div>
-        </Glow>
-    </GlowCapture>
     )
 
 }

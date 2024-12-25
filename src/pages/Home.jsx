@@ -67,8 +67,6 @@ export default function Home(){
           <h1 className="flex-center projects-title" id="projects">My Selected Projects</h1>
           {displayProjects}
           <section className="flex-center relative" >
-          <GlowCapture>
-            <Glow color='purple'>
                     <div className="flex-evenly2">
                         <div className="project-info glowable-text">
                             <h2 className="project-title">Pokemon Search App</h2>
@@ -81,8 +79,6 @@ export default function Home(){
                               <div className="home-button"></div>
                             </div>
                       </div>
-                    </Glow>
-                  </GlowCapture>
                 </section>
           <Contact />
           <Footer />

@@ -14,14 +14,14 @@ export default function InstaHome (){
 
             src: ChessClubLogo,
             user: 'lowellhschessclub',
-            story: "https://picsum.photos/500/800",
-            description: "",
+            story: "https://picsum.photos/500/800?random=1",
+            description: "Join Lowell Chess Club",
         },
         {
-            src: ChessClubImg,
+            src: LFRLogo,
             user: 'lowellfoodrescue',
-            story: "https://picsum.photos/500/800",
-            description: "",
+            story: "https://picsum.photos/500/800?random=2",
+            description: "Join Lowell Food Rescue",
         },
     ];
 
