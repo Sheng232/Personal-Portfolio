@@ -335,9 +335,11 @@ input[type="file"] {
     margin: 0 auto;
     border: none;
 }
-.popover img{
+.popover {
+    img{
     display: block;
     margin: 0 auto;
+    }
 }
 .post-image{
     background: transparent;
@@ -386,10 +388,13 @@ input[type="file"] {
     border: none;
     top: 50%;
 }
-.next-story-button > svg, .prev-story-button > svg{
-    background: transparent;
-    font-size: 1.25rem;
+.next-story-button, .prev-story-button{
+    svg{
+        background: transparent;
+        font-size: 1.25rem;
+    }
 }
+
 .prev-story-button{
     left: 10px;
 }

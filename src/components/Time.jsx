@@ -1,7 +1,7 @@
 import {useState , useEffect} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignal , faBatteryQuarter} from "@fortawesome/free-solid-svg-icons";
-import '../pages/insta.css'
+import '../pages/insta.scss'
 export default function Time(){
     const date = new Date();
     const hour = date.getHours();
